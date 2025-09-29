@@ -29,24 +29,22 @@ The dataset contains hospital admission records with both time-series counts and
 ##  Methods
 We explored multiple **time series forecasting models**:
 - **ARIMA** – baseline autoregressive model for stationary series  
-- **SARIMA** – extends ARIMA by handling seasonality  
-- **SARIMAX** – SARIMA with exogenous predictors (e.g., vitals, comorbidities)  
+- **SARIMA** – extends ARIMA by handling seasonality    
 - **Holt-Winters (Exponential Smoothing)** – trend + seasonality smoothing method  
 - **Prophet (Facebook/Meta)** – interpretable trend + seasonality modeling  
 
 **Steps:**
 1. Data preprocessing (date formatting, null handling, aggregation).  
 2. Exploratory Data Analysis (EDA) – trend, volatility, seasonality check.  
-3. Stationarity testing (ADF test).  
-4. Model training and hyperparameter tuning.  
-5. Evaluation using **RMSE, MAE**.  
-6. Forecast visualization (actual vs predicted).  
+3. Model training and hyperparameter tuning.  
+4. Evaluation using **RMSE, MAE**.  
+5. Forecast visualization (actual vs predicted).  
 
 ---
 
 ##  Results
 - Seasonality observed: **weekly patterns** in readmissions.  
-- **SARIMAX** and **Prophet** gave the most accurate and interpretable forecasts.  
+- **SARIMA** and **Prophet** gave the most accurate and interpretable forecasts.  
 - Forecasts can help predict peaks, enabling **better staffing and bed management**.  
 
 
